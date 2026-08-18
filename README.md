@@ -42,13 +42,19 @@ Accept payments via FPX, FPX B2B1, Mastercard, Maestro, Visa, Atome, GrabPay, Ma
 
 ## Webhook
 
-The module uses the success callback URL shown in the admin (API details tab):
+The module generates and sends the success callback URL automatically on every purchase — **you do NOT need to configure or set anything** for the webhook. The callback URL is built by the plugin at checkout time:
 
 ```
 https://your-store.com/index.php?route=payment/chip/success_callback
 ```
 
-The callback verifies the `X-Signature` header against the general public key fetched automatically from the CHIP API using your secret key. No manual public key configuration is required.
+The callback verifies the `X-Signature` header against the CHIP general public key. The public key is **fetched automatically from the CHIP API** using your Secret Key when you save the module settings — there is no manual public key field to fill in. The only settings you must provide are **Secret Key** and **Brand ID** (from the CHIP Collect Dashboard).
+
+> **Note:** If you see a "Public Key" or "API details" section in the admin, it is informational only — the module manages the public key itself. Do not paste anything there.
+
+## Convert To Processing
+
+Arastta supports multi-currency stores. If your store currency is **not MYR**, enable **Convert To Processing** in the module settings — the module will convert the order total and product prices to MYR (via Arastta's currency conversion) before sending the purchase to CHIP. If the setting is disabled and the store currency is not MYR, checkout will be blocked with a clear error message.
 
 ## Compatibility
 
