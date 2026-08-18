@@ -1,0 +1,117 @@
+<?php
+/**
+ * @package     CHIP Payment Gateway for Arastta eCommerce
+ * @copyright   2018-2026 CHIPAsia. All rights reserved.
+ * @license     GNU GPL version 3; see LICENSE.txt
+ * @link        https://www.chip-in.asia
+ */
+
+// Heading
+$_['heading_title'] = 'CHIP - Better Payment & Business Solutions';
+
+// Text
+$_['text_title'] = 'Online Banking / Credit Card / Debit Card (CHIP)';
+$_['text_edit'] = 'Edit CHIP';
+$_['text_success'] = 'Success: You have modified CHIP account details!';
+$_['text_enabled'] = 'Enabled';
+$_['text_disabled'] = 'Disabled';
+$_['text_all_zones'] = 'All Zones';
+$_['text_yes'] = 'Yes';
+$_['text_no'] = 'No';
+$_['text_payment'] = 'Payment';
+$_['text_chip'] = '<a href="https://www.chip-in.asia/" target="_blank"><img src="view/image/payment/chip.png" alt="CHIP" title="CHIP" style="height: 14px;" /></a>';
+
+// Tab
+$_['tab_general'] = 'General';
+$_['tab_order_status'] = 'Order status';
+$_['tab_api_details'] = 'API details';
+$_['tab_checkout'] = 'Customize checkout';
+$_['tab_troubleshoot'] = 'Troubleshoot';
+$_['tab_report'] = 'Report';
+
+// Behavior
+$_['behavior_missing_order'] = 'Missing Order';
+$_['behavior_cancel_order'] = 'Cancel Order';
+$_['behavior_fail_order'] = 'Fail Order';
+
+// Entry
+$_['entry_payment_name'] = 'Payment Name';
+$_['entry_secret_key'] = 'Secret Key';
+$_['entry_brand_id'] = 'Brand ID';
+$_['entry_webhook_url'] = 'Webhook URL';
+$_['entry_public_key'] = 'Public Key';
+$_['entry_general_public_key'] = 'General Public Key';
+$_['entry_payment_method_whitelist'] = 'Payment Method Whitelist';
+$_['entry_purchase_send_receipt'] = 'Purchase Send Receipt';
+$_['entry_due_strict'] = 'Purchase Due Strict';
+$_['entry_due_strict_timing'] = 'Purchase Due Strict Timing';
+$_['entry_total'] = 'Total';
+$_['entry_geo_zone'] = 'Geo Zone';
+$_['entry_status'] = 'Status';
+$_['entry_sort_order'] = 'Sort Order';
+$_['entry_canceled_order_status'] = 'Canceled Order Status';
+$_['entry_failed_order_status'] = 'Failed Order Status';
+$_['entry_paid_order_status'] = 'Paid Order Status';
+$_['entry_refunded_order_status'] = 'Refunded Order Status';
+$_['entry_pending_order_status'] = 'Pending Order Status';
+$_['entry_allow_instruction'] = 'Instruction';
+$_['entry_instruction'] = 'CHIP Instructions';
+$_['entry_time_zone'] = 'Time Zone';
+$_['entry_debug'] = 'Debug logging';
+$_['entry_convert_to_processing'] = 'Convert To Processing';
+$_['entry_disable_success_redirect'] = 'Disable Success Redirect';
+$_['entry_disable_success_callback'] = 'Disable Success Callback';
+$_['entry_canceled_behavior'] = 'Canceled Order Behavior';
+$_['entry_failed_behavior'] = 'Failed Order Behavior';
+
+// Help
+$_['help_payment_method_whitelist'] = 'This controls what payment method will be available on the payment page. Leave empty to allow all payment methods.';
+$_['help_payment_name'] = 'Name that will be displayed on checkout page';
+$_['help_secret_key'] = 'Secret Key can be retrieved from CHIP Collect Dashboard';
+$_['help_brand_id'] = 'Brand ID can be retrieved from CHIP Collect Dashboard';
+$_['help_webhook_url'] = 'Optional: This can be set in the CHIP Collect Dashboard';
+$_['help_public_key'] = 'Public Key can be retrieved from CHIP Collect Dashboard';
+$_['help_general_public_key'] = 'This public key will be filled automatically when the secret key is set correctly. It requires no configuration';
+$_['help_due_strict'] = 'This will prevent payment after passing due strict timing. Recommended to set to Yes';
+$_['help_due_strict_timing'] = 'Set due strict timing in minutes. Setting 60 will make the payment timeout in 1 hour. If leave blank, default to 60 minutes';
+$_['help_total'] = 'The checkout total the order must reach before this payment method becomes active';
+$_['help_status'] = 'Whether to enable/disable CHIP payment gateway';
+$_['help_sort_order'] = 'Payment gateway sorting on checkout page';
+$_['help_canceled_order_status'] = 'Default to Canceled';
+$_['help_failed_order_status'] = 'Default to Failed';
+$_['help_paid_order_status'] = 'Default to Complete';
+$_['help_refunded_order_status'] = 'Default to Refunded';
+$_['help_pending_order_status'] = 'Default to Pending';
+$_['help_allow_instruction'] = 'To show instruction on checkout page';
+$_['help_instruction'] = 'This will show on checkout page before customer make payment';
+$_['help_time_zone'] = 'This will dictate the timestamp zone on the invoice and receipt';
+$_['help_convert_to_processing'] = 'This to allow payment if the store currency is set to other than MYR';
+$_['help_disable_success_redirect'] = 'Default to No. Only tick yes if you are performing a test';
+$_['help_disable_success_callback'] = 'Default to No. Only tick yes if you are performing a test';
+$_['help_canceled_behavior'] = 'Missing Order is the default behavior. If you require the order status to be updated to canceled, change to Cancel Order';
+$_['help_failed_behavior'] = 'Missing Order is the default behavior. If you require the order status to be updated to failed, change to Fail Order';
+
+// Error
+$_['error_permission'] = 'Warning: You do not have permission to modify CHIP!';
+$_['error_secret_key'] = 'Error! You are required to set CHIP Secret Key';
+$_['error_secret_key_invalid'] = 'Error! CHIP Secret Key is not valid';
+$_['error_brand_id'] = 'Error! You are required to set Brand ID';
+$_['error_public_key'] = 'Error! The public key is not valid';
+$_['error_due_strict_timing'] = 'Error! You are required to set Due Strict Timing';
+$_['error_payment_name'] = 'Error! You are required to set Payment Name';
+$_['error_instruction'] = 'Error! You are required to set CHIP Instructions';
+
+// Column
+$_['column_order'] = 'Order';
+$_['column_chip_id'] = 'Purchase ID';
+$_['column_status'] = 'Status';
+$_['column_amount'] = 'Amount';
+$_['column_environment'] = 'Environment';
+$_['column_date_added'] = 'Date Added';
+$_['text_no_results'] = 'No Results';
+
+// Button
+$_['button_save'] = 'Save';
+$_['button_savenew'] = 'Save & New';
+$_['button_saveclose'] = 'Save & Close';
+$_['button_cancel'] = 'Cancel';
